@@ -1,0 +1,19 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store
+
+# Datos capturados y modelos entrenados pueden ser pesados o contener datos locales.
+data/raw/*.csv
+data/processed/*.csv
+models/*.pkl
+
+# Mantener las carpetas disponibles en clones nuevos.
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+
