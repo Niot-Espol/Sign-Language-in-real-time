@@ -9,14 +9,11 @@ __pycache__/
 
 # Datos capturados y modelos entrenados pueden ser pesados o contener datos locales.
 data/raw/*.csv
-data/raw/sequences/
-data/raw/*.jsonl
-data/legacy_63/*.csv
 data/processed/*.csv
 models/*.pkl
 
 # Mantener las carpetas disponibles en clones nuevos.
 !data/raw/.gitkeep
-!data/legacy_63/.gitkeep
 !data/processed/.gitkeep
 !models/.gitkeep
+

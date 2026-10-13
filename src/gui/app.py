@@ -27,7 +27,7 @@ class AplicacionTraductor(tk.Tk):
         self.resultado = PanelResultado(self)
         self.resultado.pack(fill="x", padx=20, pady=(0, 20))
 
-        self.detector = DetectorManos(max_manos=2)
+        self.detector = DetectorManos()
         self.captura = cv2.VideoCapture(0)
         if not self.captura.isOpened():
             self.detector.cerrar()
@@ -54,11 +54,10 @@ class AplicacionTraductor(tk.Tk):
         frame = cv2.flip(frame, 1)
         manos = self.detector.procesar(frame)
         if manos:
-            for mano in manos:
-                dibujar_mano(frame, mano.landmarks)
+            mano = manos[0]
+            dibujar_mano(frame, mano.landmarks)
             if self.clasificador is not None:
-                vector = self.detector.vector_dos_manos(manos)
-                etiqueta, confianza = self.clasificador.predecir(vector)
+                etiqueta, confianza = self.clasificador.predecir(mano.caracteristicas)
                 self.resultado.actualizar(etiqueta, confianza)
 
         rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -78,3 +77,4 @@ class AplicacionTraductor(tk.Tk):
 
 def ejecutar() -> None:
     AplicacionTraductor().mainloop()
+
