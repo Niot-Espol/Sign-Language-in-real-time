@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "idioma": "Lengua de señas por validar con el equipo",
+  "palabras": [
+    {"etiqueta": "comer", "slug": "comer", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "papá", "slug": "papa", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "ir", "slug": "ir", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "bien", "slug": "bien", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "querer", "slug": "querer", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "tu", "slug": "tu", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "por favor", "slug": "por_favor", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "casa", "slug": "casa", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "si", "slug": "si", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "perdón", "slug": "perdon", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "mal", "slug": "mal", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "nombre", "slug": "nombre", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "no", "slug": "no", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "gracias", "slug": "gracias", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "mamá", "slug": "mama", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "tomar", "slug": "tomar", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "entender", "slug": "entender", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "hola", "slug": "hola", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "amigo", "slug": "amigo", "tipo": "por_definir", "manos_requeridas": null},
+    {"etiqueta": "yo", "slug": "yo", "tipo": "por_definir", "manos_requeridas": null}
+  ]
+}
